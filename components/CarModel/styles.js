@@ -23,7 +23,7 @@ const styles= StyleSheet.create({
         height: '100%',
         resizeMode: 'cover',
         position: 'absolute'
-      }
+    }
 });
 
 export default styles;
