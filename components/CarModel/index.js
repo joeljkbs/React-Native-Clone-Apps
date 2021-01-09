@@ -1,12 +1,14 @@
 import React from 'react';
-import {View, Text,ImageBackground} from  'react-native';
+import {View, Text,ImageBackground,Linking} from  'react-native';
 import Button from '../Button/index';
 import styles from './styles';
 
 
 const CarModel= (props) => {
 
-  const {name, price,tagline,tagbold, picture} = props.model;
+  
+  const {name,tagline,tagbold, picture, custom, existing} = props.model;
+  const display= name === 'Model Y' ? 'Learn More' : 'Existing Inventory';
 return (
     <View style={styles.carContainer}>      
       
@@ -26,19 +28,20 @@ return (
 
       </View>
 
+      
       <View style={styles.buttonsContainer}>
       <Button 
         type="primary" 
         content={"Custom Order"} 
         onPress={()=>{
-          console.warn("Custom Order was pressed");
+          Linking.openURL(custom);
         }}
       />
       <Button 
         type="secondary" 
-        content={"Existing Inventory"} 
+        content={display} 
         onPress={()=>{
-          console.warn("Existing inventory was pressed");
+          Linking.openURL(existing);
         }}
       />  
       </View>
