@@ -5,7 +5,7 @@ import styles from './styles';
 
 const CarModel= (props) => {
 
-  const {name, price,tagline,tagbold, picture} = props;
+  const {name, price,tagline,tagbold, picture} = props.model;
 return (
     <View style={styles.carContainer}>      
       
