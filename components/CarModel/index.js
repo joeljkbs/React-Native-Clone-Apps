@@ -3,6 +3,7 @@ import {View, Text,ImageBackground} from  'react-native';
 import Button from '../Button/index';
 import styles from './styles';
 
+
 const CarModel= (props) => {
 
   const {name, price,tagline,tagbold, picture} = props.model;
@@ -17,6 +18,7 @@ return (
         <Text style={styles.title1}>{name}</Text>
         <Text style={styles.title2}>
           {tagline}
+          {' '}
           <Text style={styles.tagb}>
             {tagbold}
           </Text>
