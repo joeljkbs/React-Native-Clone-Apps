@@ -6,11 +6,14 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         width: '96%',
         marginLeft:6,
+        marginBottom: 15,
         padding: 10
     },
     button: {        
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        
+    
     },
 
     text: {

@@ -5,7 +5,13 @@ import CarModel from './components/CarModel'
 export default function App() {
   return (
     <View style={styles.container}>
-      <CarModel/>
+      <CarModel
+      name={"Model 3"}
+      // price={"Starting at C$99,500"}
+      tagline={"Order Online For "}
+      tagbold={"Touchless Delivery"}
+      picture={require('./assets/images/Model3.jpeg')}
+      />
       <StatusBar style="auto" />
     </View>
   );
